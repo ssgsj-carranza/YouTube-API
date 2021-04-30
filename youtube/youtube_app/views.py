@@ -11,7 +11,7 @@ from django.http import Http404
 
 class PageMethods(APIView):
 
-    def get_object(self,pk):
+    def get_object(self, pk):
         try:
             return Page.objects.get(pk=pk)
         except Page.DoesNotExist:
